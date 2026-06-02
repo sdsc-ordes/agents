@@ -2,8 +2,8 @@
 name: run-nix-devshell
 description: >-
   Discovers and runs project tooling through a nix flake devshell. Triggers
-  before running tools if the project contains a `flake.nix`,or when the
-  user mentions nix. Wraps each command with `nix develop --command`.
+  before running tools if the project contains a `flake.nix`, or when the
+  user mentions `nix`. Wraps each command with `nix develop --command`.
   Skip for universal system tools (e.g. `git`, `cat`, `ls`, `grep`).
 ---
 
