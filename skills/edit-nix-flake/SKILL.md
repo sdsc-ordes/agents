@@ -16,8 +16,8 @@ Apply this skill whenever creating or modifying a `flake.nix`, a
 `shells/*.nix` devenv module, or a per-package `.nix` file. For invoking
 tooling through an existing devshell, use the `run-nix-devshell` skill.
 
-References (load JiT): `example-flake.md` (annotated bootstrap),
-`devenv-shells.md` (devenv modules), `packages.md` (wrapper derivations).
+References (load JiT): `references/example-flake.md` (annotated bootstrap),
+`references/devenv-shells.md` (devenv modules), `references/packages.md` (wrapper derivations).
 
 ## Step 1: Choose The Layout
 
