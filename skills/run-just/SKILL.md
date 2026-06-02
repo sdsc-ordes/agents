@@ -107,11 +107,11 @@ Never directly read decrypted secret files.
   `just compose` prints the list of compose recipes; pick a specific recipe to
   execute something.
 
-## Submodules
+## Modules
 
-When the root justfile declares a submodules such as `compose` or
+When the root justfile declares a module such as `compose` or
 `secrets` (look for the matching `mod` line), inspect the rules in
-the submodule file to discover its recipes.
+the module file to discover its recipes.
 
 ## Override variables
 
