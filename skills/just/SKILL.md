@@ -1,12 +1,11 @@
 ---
 name: just
 description: >-
-  Discovers and runs `just` recipes for project operations such as build, test,
-  lint, format, serve, deploy, and dev shells. Triggers on any operational task
-  inside a project repository, even when the user does not mention `just`
-  explicitly. Prefers existing recipes over equivalent raw commands like
-  `docker compose up`, `uv run`, `treefmt`, or `nix develop`. Use only when a
-  `justfile`, `Justfile`, or `.justfile` exists at the project root.
+  Discovers and runs `just` recipes for operations such as build, test,
+  lint, format or deploy. Triggers on operational tasks inside a repository,
+  even when the user does not mention `just` explicitly. Prefers existing
+  recipes over raw commands like `docker compose up`, `uv run`, or `nix develop`.
+  Use only when the project contains a `justfile`, `Justfile`, or `.justfile`.
 ---
 
 # Just Command Runner
@@ -91,8 +90,7 @@ destructive recipe. When the user has already requested the operation
 explicitly (for example "deploy the stack"), treat that request as
 confirmation.
 
-For the concrete destructive recipes in SDSC stack modules (`compose`,
-`secrets`), see `references/sdsc-modules.md`.
+Never directly read decrypted secret files.
 
 ## Operational Notes
 
@@ -109,9 +107,13 @@ For the concrete destructive recipes in SDSC stack modules (`compose`,
   `just compose` prints the list of compose recipes; pick a specific recipe to
   execute something.
 
-## SDSC Module Conventions
+## Submodules
 
-When the root justfile declares SDSC stack modules such as `compose` or
-`secrets`, read `references/sdsc-modules.md` for the conventions specific to
-those modules (SOPS key file location, encrypted-file naming, and the list of
-destructive recipe names).
+When the root justfile declares a submodules such as `compose` or
+`secrets` (look for the matching `mod` line), inspect the rules in
+the submodule file to discover its recipes.
+
+## Override variables
+
+For details and examples on how to manually set variables from the command line, see [override-variables](./references/override-variables.md).
+
