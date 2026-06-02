@@ -1,5 +1,5 @@
 ---
-name: just
+name: run-just
 description: >-
   Discovers and runs `just` recipes for operations such as build, test,
   lint, format or deploy. Triggers on operational tasks inside a repository,
