@@ -4,7 +4,7 @@ description: >-
   Creates and edits `just` recipes for project automation. Triggers when
   adding, editing, or refactoring a `justfile`, `Justfile`, `.justfile`, or
   a `.just` module file. Encodes conventions for top-level settings, recipe
-  layout, modules, naming, and secret handling. Skip when only running existing 
+  layout, modules, naming, and secret handling. Skip when only running existing
   recipes — use the `run-just` skill instead.
 ---
 
