@@ -38,8 +38,10 @@ KEYCLOAK_PASSWORD_FILE=~/.config/keycloak/secret.txt
 
 * no secrets in .env.
 * justfile sources the .env
+* gitignore `.env`; commit only `.env.tpl`.
+* in recipes touching secrets: keep shell tracing off (no `set -x` / `bash -x`), pass values via stdin or process substitution (`--password-stdin`, `< "$FILE"`) rather than CLI arguments, and avoid `echo` of secret-bearing variables — all three surface secrets in CI logs or `ps` output.
 
-NEVER read decrypted secrets file, no matter what. If you read secrets, inform the user explicitly and recommend them to revoke their secrets.
+NEVER read, write, or modify files outside the project — including secret files and their permissions. Let the user manage them. If you do read a secret, inform the user explicitly and recommend they revoke it.
 
 # Conventions
 
