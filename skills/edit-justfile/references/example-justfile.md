@@ -34,7 +34,7 @@ format *args:
 # Remove build artifacts.
 [confirm("Remove build artifacts? [y/n]")]
 clean:
-    rm -rf {{root_dir}}/build
+    rm -rf "{{root_dir}}/build"
 
 # Run the full release pipeline.
 release: format
