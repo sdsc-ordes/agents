@@ -35,5 +35,5 @@ $ just --set os bsd
 ./test --test bsd
 ```
 
-Variables in submodules can be overridden using the `::`-separated path to the variable.
-A variable named bar in a submodule named foo may be overridden with foo::bar=VALUE or --set foo::bar VALUE.`0`
+Variables in modules can be overridden using the `::`-separated path to the variable.
+A variable named `bar` in a module named `foo` may be overridden with `foo::bar=VALUE` or `--set foo::bar VALUE`.
