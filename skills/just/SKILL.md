@@ -1,0 +1,1 @@
+/nix/store/893ijdy2awchxagar0gl31qp0fs6gqy8-home-manager-files/.config/opencode/skills/just/SKILL.md
