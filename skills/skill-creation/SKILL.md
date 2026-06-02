@@ -1,8 +1,8 @@
 ---
 name: skill-creation
 description: >-
-  Use this skill to create new skills for agents or update existing ones.
-  It includes documentation on best practices and SDSC-specific guidance.
+  Creates new skills for agents or updates existing ones.
+  Includes documentation on best practices and SDSC-specific guidance.
 ---
 
 # Skill Creation
