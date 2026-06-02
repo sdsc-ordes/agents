@@ -1,5 +1,5 @@
 ---
-name: nix-devshell
+name: run-nix-devshell
 description: >-
   Discovers and runs project tooling through a nix flake devshell. Triggers
   before running tools if the project contains a `flake.nix`,or when the
