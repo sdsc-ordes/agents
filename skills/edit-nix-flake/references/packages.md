@@ -6,23 +6,10 @@ and import the resulting derivation into a flake package list.
 
 ## File Layout
 
-```
-tools/nix/
-├── flake.nix
-└── packages/
-    └── treefmt.nix
-```
-
-Import the resulting derivation into a package list:
-
-```nix
-# flake.nix
-packagesBasic = with pkgs; [
-  git
-  just
-  (import ./packages/treefmt.nix { inherit inputs pkgs; })
-];
-```
+Put the wrapper in `packages/<name>.nix` and add
+`(import ./packages/<name>.nix { inherit inputs pkgs; })` to a package
+list in `flake.nix`. See `example-flake.md` for the import site in
+context.
 
 ## Function Signature
 

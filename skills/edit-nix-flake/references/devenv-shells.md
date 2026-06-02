@@ -7,16 +7,9 @@ Node+pnpm, Rust+cargo).
 
 ## File Layout
 
-Put the module definition in `shells/<component>.nix` and import it
-from `flake.nix`:
-
-```nix
-# flake.nix
-devShells.data-pipeline = devenv.lib.mkShell {
-  inherit pkgs inputs;
-  modules = import ./shells/data-pipeline.nix { inherit pkgs; };
-};
-```
+Put the module definition in `shells/<component>.nix` and import it from
+`flake.nix` via `devenv.lib.mkShell { inherit pkgs inputs; modules = import ./shells/<component>.nix { inherit pkgs; }; }`. See
+`example-flake.md` for the import site in context.
 
 ## Module Structure
 
