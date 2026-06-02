@@ -61,7 +61,7 @@ just <recipe> [args]
 just <module>::<recipe> [args]
 ```
 
-Most recipes use `shell := ["bash", "-cue"]` and exit immediately on error.
+Most recipes use `set shell := ["bash", "-cue"]` and exit immediately on error.
 When a recipe fails, consult the source already read in Step 1 to identify the
 cause before retrying.
 
