@@ -12,7 +12,8 @@ document adds the corresponding dark theme so that a single token set drives bot
 appearances.
 
 - **Tech stack:** React or SvelteKit with Tailwind CSS v4.
-- **Fonts:** Space Grotesk (headings) and Switzer (body and UI).
+- **Fonts:** Space Grotesk (headings), Switzer (body and UI), and JetBrains Mono
+  (code and IDs).
 - **Status:** active. Update this file when the Figma kit changes.
 
 ## How to use this document
@@ -123,6 +124,12 @@ The kit defines a secondary green, `#90ca42`, for highlights and progress
 completion. It is **not** a chrome color: don't use it for primary actions,
 navigation, or backgrounds. Reserve it for the complete (100%) state of progress
 indicators and occasional accent highlights.
+
+| Token | Light | Dark | Role |
+|---|---|---|---|
+| `--op-green` | `#90ca42` | `#a4d564` | Secondary accent. Progress-complete (100%) state and occasional highlights. Dark mode steps to the Light scale value so it reads on near-black. |
+
+Full green scale (source of truth — don't invent intermediate steps):
 
 | Scale | Lighter | Light | Base | Dark | Darker |
 |---|---|---|---|---|---|
@@ -577,6 +584,9 @@ mode overrides the same names under `.dark`.
   --op-blue-light: #8a94c9;
   --op-blue-pale: #dddeec;
 
+  /* Secondary accent */
+  --op-green: #90ca42;
+
   /* Text */
   --op-text: #000000;
   --op-text-2: #525252;
@@ -615,6 +625,9 @@ mode overrides the same names under `.dark`.
   --op-blue: #5461a6;
   --op-blue-light: #8a94c9;
   --op-blue-pale: #1a1834;
+
+  /* Secondary accent (stepped lighter to read on near-black) */
+  --op-green: #a4d564;
 
   /* Text */
   --op-text: #f4f4fc;
