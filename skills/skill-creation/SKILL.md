@@ -24,8 +24,7 @@ all situations. The following situations are not good fits for skills:
    terminal commands. Because skills are effectively additional context, there
    is no guarantee that agents will strictly follow their instructions or even
    load them 100% of the time they are relevant. If you need to strictly enforce
-   something, functionality such as the excludeTools field for Gemini CLI
-   extensions are the correct solution.
+   something, functionality such as hooks or extensions should be used instead.
 2. If you are essentially trying to provide your agent access to an API. In this
    case, an MCP server is a more appropriate tool for the job.
 
