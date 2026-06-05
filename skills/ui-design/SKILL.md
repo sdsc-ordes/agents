@@ -1,15 +1,11 @@
 ---
 name: ui-design
 description: >-
-  Applies the Swiss Data Science Center (SDSC) visual identity to web UI —
-  design tokens, typography, spacing, components, and page layouts in both light
-  and dark mode, framework-agnostic (React or SvelteKit with Tailwind CSS v4).
-  Use when building, styling, restyling, or reviewing any web page, component,
-  layout, or design system that should follow the SDSC look; when defining or
-  editing design tokens, colors, fonts, radius, or spacing; or when the user
-  says "design", "restyle", "SDSC branding", "dark mode", or "match the design
-  system". Skip for backend, infrastructure, CI, devcontainer, or shell-script
-  work, and for non-SDSC visual identities.
+  Applies the Swiss Data Science Center (SDSC) visual identity to framework-agnostic web UI (
+  design, typography, spacing, components, and layouts). Use when building, editing, or reviewing
+  any visual component that should follow the SDSC look; when  defining or editing design tokens,
+  colors, fonts, radius, or spacing; or when the user says "design", "restyle", "SDSC branding" or
+  "match the design system". Skip for non-visual work, and for non-SDSC visual identities.
 ---
 
 # UI design — SDSC visual system
