@@ -1,5 +1,5 @@
 ---
-name: ui-design
+name: sdsc-ui-design
 description: >-
   Applies the Swiss Data Science Center (SDSC) visual identity to framework-agnostic web UI (
   design, typography, spacing, components, and layouts). Use when building, editing, or reviewing
