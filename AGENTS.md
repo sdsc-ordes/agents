@@ -9,6 +9,7 @@ Guidelines for AI agents working in the Swiss Data Science Center (SDSC) codebas
 - Statelessness: Avoid mutable global state. Prefer pure functions.
 - Testability: Code must be designed to be easily tested (dependency injection, small units).
 - Conciseness: Prefer self-documenting code and terse documentation without filler.
+- Modularity: Aim for components with low coupling and high cohesion. 
 
 ## Project structure
 
