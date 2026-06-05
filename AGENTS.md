@@ -10,6 +10,32 @@ Guidelines for AI agents working in SDSC codebase.
 - Testability: Code must be designed to be easily tested (dependency injection, small units).
 - Conciseness: Prefer self-documenting code and terse documentation without filler.
 
+## Project structure
+
+When creating directories, default to our standard project structure, unless the project has an existing alternative.
+
+- `docs`: All documentation-related files.
+- `examples`: Examples showing how to use the software.
+- `external`: Imported third party resources.
+- `src`: Where your source code lives.
+- `tools`: All configurations and scripts which are not part of the source.
+  - `configs`: config for tools (e.g. formatters, linters).
+  - `just`: just modules (e.g. image.just).
+  - `nix`: Nix flake and code.
+  - `ci`: CI related tooling/scripts.
+  - `scripts`: Additional scripts.
+
+## Toolchain
+
+Use the project existing toolchain when available. Otherwise, default to the following.
+
+* `just` as command runner.
+* `nix` flakes for devShells.
+* `podman` for OCI images.
+* `prek` as git-hook manager.
+* `vendir` to manage external dependencies.
+* For python projects: `uv`, `ruff`.
+
 ## Rules by Topic
 
 These general rules define our high level development practices.
