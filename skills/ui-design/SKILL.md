@@ -15,10 +15,7 @@ description: >-
 # UI design — SDSC visual system
 
 Build and review web UIs that follow the **Swiss Data Science Center (SDSC)**
-visual identity. The complete, authoritative specification — every token,
-component, and layout, for both light and dark mode — lives in
-`references/design.md`. This file is the lean entry point: it states the
-non-negotiable principles and tells you when to load the full reference.
+visual identity. 
 
 The system is derived from the SDSC UI Kit (Figma Make file
 `xFRPysbb2ni4RXyuT7dVqq`, UI Kit v2.1, based on
