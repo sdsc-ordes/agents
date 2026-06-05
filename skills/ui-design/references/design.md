@@ -1,9 +1,5 @@
 # SDSC design system
 
-This document is the source of truth for building user interfaces with the Swiss
-Data Science Center (SDSC) visual identity. It defines the design tokens,
-typography, spacing, components, and page layouts that every SDSC surface follows,
-in both **light mode** and **dark mode**.
 
 The system is derived from the SDSC UI Kit (Figma Make file
 `xFRPysbb2ni4RXyuT7dVqq`, UI Kit v2.1), which is itself based on
