@@ -35,7 +35,8 @@ Use the project's existing toolchain when available. Otherwise, default to the f
 * `podman` for OCI images.
 * `prek` as git-hook manager.
 * `vendir` to manage external dependencies.
-* For python projects: `uv`, `ruff`.
+* For python components: `uv`, `ruff`.
+* For javascript components: `pnpm`.
 
 ## Rules by Topic
 
