@@ -87,4 +87,4 @@ $ git subtree pull --prefix=.agents/ sdsc-agents main --squash
 
 ## Credits
 
-The AGENTS.md is inspired from [DataDoc/lading](https://github.com/DataDog/lading).
+`AGENTS.md` is inspired by [DataDog/lading](https://github.com/DataDog/lading).
