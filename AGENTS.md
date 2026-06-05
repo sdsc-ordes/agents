@@ -105,6 +105,7 @@ When writing generators, output should be a pure function of (seed, config).
 - Reproducibility comes from a committed lockfile for every deployable.
 - Published libraries: avoid over-constraining consuming libraries by setting a
   low floor.
+- Move dependencies into relevant groups when the language allows (e.g. dev, docs, test).
 
 ### Documentation
 
