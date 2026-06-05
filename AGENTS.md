@@ -27,7 +27,7 @@ When creating directories, default to our standard project structure, unless the
 
 ## Toolchain
 
-Use the project existing toolchain when available. Otherwise, default to the following.
+Use the project's existing toolchain when available. Otherwise, default to the following.
 
 * `just` as command runner.
 * `nix` flakes for devShells.
