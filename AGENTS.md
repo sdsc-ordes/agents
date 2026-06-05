@@ -1,6 +1,6 @@
 # Agent Instructions
 
-Guidelines for AI agents working in SDSC codebase.
+Guidelines for AI agents working in the SDSC codebase.
 
 ## General values
 
