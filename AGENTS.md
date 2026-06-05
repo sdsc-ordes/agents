@@ -20,6 +20,7 @@ When creating directories, default to our standard project structure, unless the
 - `src`: Where your source code lives.
 - `tools`: All configurations and scripts which are not part of the source.
   - `configs`: config for tools (e.g. formatters, linters).
+  - `images`: `Containerfile` definitions of OCI images.
   - `just`: just modules (e.g. image.just).
   - `nix`: Nix flake and code.
   - `ci`: CI related tooling/scripts.
