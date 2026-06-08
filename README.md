@@ -7,7 +7,6 @@ It is meant as a shared knowledge base for AI agents such that they follow our s
 
 ```
 AGENTS.md # Basic agent behavior.
-DESIGN.md # Visual design system.
 ai-usage/ # AI policy [for humans].
 skills/   # Task-specific instructions.
 hooks/    # Event-triggered scripts. [TODO]
