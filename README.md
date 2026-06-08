@@ -83,3 +83,8 @@ $ git subtree add --prefix=.agents/ sdsc-agents main --squash
 # Pull remote updates to local subtree
 $ git subtree pull --prefix=.agents/ sdsc-agents main --squash
 ```
+
+
+## Credits
+
+`AGENTS.md` is inspired by [DataDog/lading](https://github.com/DataDog/lading).
