@@ -8,6 +8,7 @@ It is meant as a shared knowledge base for AI agents such that they follow our s
 ```
 AGENTS.md # Basic agent behavior.
 ai-usage/ # AI policy [for humans].
+config/   # Ready-to-use tool configurations (e.g. Docker sandbox kits).
 skills/   # Task-specific instructions.
 hooks/    # Event-triggered scripts. [TODO]
 ```

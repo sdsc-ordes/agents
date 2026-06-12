@@ -1,0 +1,30 @@
+schemaVersion: "1"
+kind: mixin
+name: opencode-epfl-rcp
+displayName: opencode + EPFL RCP inference
+description: >-
+  Pre-configures opencode to use the EPFL RCP AI
+  inference-as-a-service endpoint (inference-rcp.epfl.ch).
+  Config-only; expects opencode in the sandbox image.
+
+# RCP_TOKEN is read from the host environment and injected by the
+# sandbox proxy on requests to the inference endpoint.
+credentials:
+  sources:
+    epfl-rcp:
+      env:
+        - RCP_TOKEN
+
+network:
+  allowedDomains:
+    - inference-rcp.epfl.ch
+  serviceDomains:
+    inference-rcp.epfl.ch: epfl-rcp
+  serviceAuth:
+    epfl-rcp:
+      headerName: Authorization
+      valueFormat: "Bearer %s"
+
+environment:
+  proxyManaged:
+    - RCP_TOKEN
