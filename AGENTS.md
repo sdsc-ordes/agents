@@ -68,7 +68,7 @@ Failures are part of a function's contract, expressed in its return/error type.
 - Every component that generates or handles data carries correctness requirements.
 - Apply the cheapest verification (static analysis / type checking) to all code;
   treat its failures as build failures.
-- Property-based tests are the primary workhorse: generate many inputs and assert
+- Use property-based tests when relevant: generate many inputs and assert
   invariants rather than hand-picked cases.
 - Where call order matters (e.g. stateful APIs), generate sequences of operations,
   not just independent inputs
