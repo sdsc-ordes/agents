@@ -84,6 +84,15 @@ $ git subtree add --prefix=.agents/ sdsc-agents main --squash
 $ git subtree pull --prefix=.agents/ sdsc-agents main --squash
 ```
 
+## Integrating with your repo guidelines
+
+Instead of using symlinks for AGENTS.md, you may also use your own CLAUDE.md / AGENTS.md and point to this one as reference using `@.agents/AGENTS.md`.
+
+## Plugins
+
+In addition, we recommend using the following plugins:
+* [superpowers](https://github.com/obra/Superpowers)
+* [ponytail](https://github.com/DietrichGebert/ponytail)
 
 ## Credits
 
